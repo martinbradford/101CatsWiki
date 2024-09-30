@@ -12,7 +12,7 @@ permissions:
 env:
   INSTANCE: 'Writerside/CatsWiki'
   ARTIFACT: 'webHelpCATSWIKI2-all.zip'
-  DOCKER_VERSION: '242.21870'
+  DOCKER_VERSION: '241.18775'
   ALGOLIA_ARTIFACT: 'algolia-indexes-CATSWIKI.zip'
   ALGOLIA_APP_NAME: 'NLAGB2LZHU'
   ALGOLIA_INDEX_NAME: 'MY_INDEX'
