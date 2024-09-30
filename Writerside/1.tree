@@ -2,8 +2,8 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="1w"
-                  name="101Cats Wiki" start-page="WikiHomePage.topic">
+<instance-profile id="1"
+                  name="101Cats_Wiki" start-page="WikiHomePage.topic">
 
     <toc-element topic="WikiHomePage.topic"/>
     <toc-element topic="Using-an-external-SDR-as-a-high-resolution-panadaptor.topic"/>
