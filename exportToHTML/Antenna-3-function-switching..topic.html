@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Antenna-3-function-switching..topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Antenna-3-function-switching..topic</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">topic </span><span class="s0">SYSTEM </span><span class="s2">&quot;https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;topic </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="s1">xsi:noNamespaceSchemaLocation</span><span class="s2">=&quot;https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd&quot;</span>
+       <span class="s1">id</span><span class="s2">=&quot;Antenna-3-function-switching.&quot; </span><span class="s1">title</span><span class="s2">=&quot;Antenna 3 function notes.&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;title&gt;</span>
+        <span class="s3">Antenna 3 function notes.</span>
+    <span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">101Cats includes a combo-box for each receiver to select the antenna configuration. The options available are</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Ant 1</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">,</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Ant 2</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">, and a third which is dependent on the configuration selected in the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Operation Setting</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">menu under</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">ANT3 Select</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">. Recent versions of 101Cats have included a combo-box named</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna 3 Function</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">, but this has omitted one supported option,</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">TRX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">. This is now implemented, but subject to some controls that are described below.</span>
+    <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">The Antenna 3 socket on the FTdx101 series can be configured in several ways. These include options to connect an</span>
+        <span class="s3">active receive antenna to it in order to reduce QRM/QRN. It can also be configured as a third transmit antenna.</span>
+        <span class="s3">The problem with this is that if you connect an active antenna but configure the antenna 3 socket as a general</span>
+        <span class="s3">purpose TX/RX socket and select it, the next time you transmit, you will push 100W of RF into the pre-amplifier</span>
+        <span class="s3">of your receive antenna and almost certainly destroy it.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">In order to address this, I've added a pair of configuration items to 101Cats. These are</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna3 Permit TX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">and</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna 3 Warn TX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">. They have been added to the configuration dialogue box. By default, they are both disabled. If</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Permit TX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">is enabled, then the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">TRX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">option in the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna 3 Function</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">combo-box is enabled and you will be able to select it. This will, in turn, make the third option in the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">combo-boxes</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Ant 3</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">. Setting the radio in this way will result in power being output on the antenna 3 socket.</span>
+    <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">If you turn on</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna3 Permit TX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">, then the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna 3 Warn TX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">configuration option will be taken into account. Under these circumstances, the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">TRX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">option in</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna 3 Function</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">will become enabled and selecting it will enable the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Ant 3</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">setting in the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">combo-box. But with the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Antenna 3 Warn TX</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">option turned on, each time you select</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Ant 3</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">as the antenna, you will be presented with a modal message box warning that this configuration could result in</span>
+        <span class="s3">damaging an external receiver.</span>
+    <span class="s0">&lt;/p&gt;</span>
+
+<span class="s0">&lt;/topic&gt;</span></pre>
+</body>
+</html>

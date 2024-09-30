@@ -6,6 +6,11 @@
 
     <chapter title="Welcome to the 101Cats wiki!" id="welcome-to-the-101cats-wiki">
         <p>At the moment, documentation is minimal, but I shall gradually create some.</p>
+
+        <list>
+            <li><a href="Configuring-101Cats.topic">Configuring 101Cats</a> </li>
+            <li><a href="Colour-themes.topic">Colour themes</a> </li>
+        </list>
     </chapter>
     <title>
         Watch this space!

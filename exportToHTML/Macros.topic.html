@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Macros.topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Macros.topic</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">topic </span><span class="s0">SYSTEM </span><span class="s2">&quot;https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;topic </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="s1">xsi:noNamespaceSchemaLocation</span><span class="s2">=&quot;https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd&quot;</span>
+       <span class="s1">id</span><span class="s2">=&quot;Macros&quot; </span><span class="s1">title</span><span class="s2">=&quot;Macros&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;title&gt;</span>
+        <span class="s3">Macros</span>
+    <span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">V1.0.9.9 adds a simple Macro function. The </span><span class="s4">&amp;quot;</span><span class="s3">Macros</span><span class="s4">&amp;quot; </span><span class="s3">button (bottom centre of main screen) opens the</span>
+        <span class="s3">Macros Window. This is divided into a 5x5 matrix of buttons that can be programmed to perform user defined</span>
+        <span class="s3">tasks. A button is programmed by right clicking on it and selecting </span><span class="s4">&amp;quot;</span><span class="s3">Edit</span><span class="s4">&amp;quot; </span><span class="s3">from the context menu that</span>
+        <span class="s3">pops up. In the dialogue box, give the macro a title, enter background and foreground colours for it and give it</span>
+        <span class="s3">a definition. Currently, you specify colours as text strings - </span><span class="s4">&amp;quot;</span><span class="s3">Yellow</span><span class="s4">&amp;quot;</span><span class="s3">, </span><span class="s4">&amp;quot;</span><span class="s3">Red</span><span class="s4">&amp;quot;</span><span class="s3">, </span><span class="s4">&amp;quot;</span><span class="s3">LightBlue</span><span class="s4">&amp;quot;</span>
+        <span class="s3">etc. Windows recognises a wide range of colours by name - experiment! If you enter a colour that Windows does</span>
+        <span class="s3">not recognise, you will get an error message when you try to save the definition. At some point in the future,</span>
+        <span class="s3">I'll put in the effort to change these to combo-boxes in order to simplify the data entry.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">The macro definition is currently a string containing one or more CAT commands. For example, the string </span><span class="s4">&amp;quot;</span><span class="s3">FA007074000;MD0C;</span><span class="s4">&amp;quot;</span>
+        <span class="s3">will prepare you to run 40m FT8 by tuning to 7.074MHz and switching to DUSB mode. Note that each CAT command</span>
+        <span class="s3">must be terminated with a semicolon. You can compose the definition string with reference to the FTdx101 CAT</span>
+        <span class="s3">command manual. Alternatively, the Trace Window (opened with the TW button) can help - the right hand list pane</span>
+        <span class="s3">displays the commands that are sent to the radio. Perform the functions that you want to program onto the macro</span>
+        <span class="s3">button via the 101Cats main window while observing the Trace Window (but do note that there will be other</span>
+        <span class="s3">traffic displayed as well, so don't copy commands blindly, check them back to the CAT command manual if</span>
+        <span class="s3">necessary.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">Be careful with the commands you send to the radio - particularly if you are not familiar with driving a radio</span>
+        <span class="s3">via CAT commands. It should not be possible to physically damage the radio, but you could get it into a strange</span>
+        <span class="s3">state that might require a factory reset!</span><span class="s0">&lt;/p&gt;</span>
+
+<span class="s0">&lt;/topic&gt;</span></pre>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Using-an-external-SDR-as-a-high-resolution-panadaptor.topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Using-an-external-SDR-as-a-high-resolution-panadaptor.topic</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">topic </span><span class="s0">SYSTEM </span><span class="s2">&quot;https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;topic </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="s1">xsi:noNamespaceSchemaLocation</span><span class="s2">=&quot;https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd&quot;</span>
+       <span class="s1">id</span><span class="s2">=&quot;Using-an-external-SDR-as-a-high-resolution-panadaptor&quot;</span>
+       <span class="s1">title</span><span class="s2">=&quot;Using an external SDR as a high resolution panadaptor&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;title&gt;</span>
+        <span class="s3">Using an external SDR as a high resolution panadaptor</span>
+    <span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">OK, so the FTdx101 series of radios has an excellent panadaptor function via the screen on the front panel plus</span>
+        <span class="s3">the external screen that can be plugged into the DVI socket on the rear panel. But the screen resolution is only</span>
+        <span class="s3">moderate and there are benefits that can be had by connecting an external SDR unit such as an SDRPlay RSP1A. A</span>
+        <span class="s3">unit such as this works with an application on the shack PC which processes the output of the SDR, tuning it to</span>
+        <span class="s3">the required frequency, demodulating the RF and applying functions such as noise reduction and filtering.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">The two leading SDR applications for Windows are SDR Console and SDR Uno. When paired up with a suitable SDR,</span>
+        <span class="s3">these can make your PC function as a very nice general coverage receiver spanning frequencies from Long Wave all</span>
+        <span class="s3">the way up to microwaves. They also include functions that will allow them to be interfaced to many modern HF</span>
+        <span class="s3">transceivers to provide a high resolution panadaptor and/or an additional receiver.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">Both SDR Uno and SDR Console include a function to synchronize themselves with an attached transceiver -</span>
+        <span class="s3">including an FTdx101D. When this function is enabled, the tuning of the SDR application and the transceiver are</span>
+        <span class="s3">locked together - spin the dial of the FTdx101D and the application on the PC will follow the tuned frequency,</span>
+        <span class="s3">retune the PC application using the mouse wheel or keyboard and the FTdx101D will follow it.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">If all you want is a better panadaptor, then the configuration is simple. Both SDR Console and SDR Uno make use</span>
+        <span class="s3">of OmniRig as the interface for this synchronization. You need to install the SDR application of choice, install</span>
+        <span class="s3">OmniRig, create a virtual port pair following the instructions </span><span class="s0">&lt;a</span>
+                <span class="s1">href</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/wiki/Integrating-with-third%E2%80%90party-applications.&quot;</span><span class="s0">&gt;</span><span class="s3">here</span><span class="s0">&lt;/a&gt;</span><span class="s3">,</span>
+        <span class="s3">configure one end of that virtual port pair into 101Cats and the other end into OmniRig. Finally, configure your</span>
+        <span class="s3">SDR application to synchronize via OmniRig and it will all work well.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">The issue comes if you want to sometimes use the SDR application as an additional independent receiver. Both SDR</span>
+        <span class="s3">Console and SDR Uno have buttons on their windows to suspend the synchronization and you can then tune to a</span>
+        <span class="s3">different frequency to that to which the FTdx101 is tuned - possibly in a completely different band if your</span>
+        <span class="s3">antenna routing will permit it. Again, this works perfectly well - until you want to restore the</span>
+        <span class="s3">synchronization. The restoration is just a case of clicking the button on the screen of the SDR application</span>
+        <span class="s3">again, but neither SDR Console nor SDR Uno give you any function to specify which device, the FTdx101 or the SDR</span>
+        <span class="s3">application, should be considered the master. It is all a question of timing and cannot be reliably predicted -</span>
+        <span class="s3">you have found an interesting signal on either the FTdx101 or the RSP1A and want to listen to it on the other</span>
+        <span class="s3">device, but you could easily find the the restored synchronization works in the opposite direction and you lose</span>
+        <span class="s3">the frequency of interest.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">In order to resolve this, 101Cats introduces a second interface to an external SDR application - the </span><span class="s4">&amp;quot;</span><span class="s3">SDR</span>
+        <span class="s3">Port</span><span class="s4">&amp;quot; </span><span class="s3">that is referenced in the configuration screen. You create another virtual port pair, configure one</span>
+        <span class="s3">side of that pair into the SDR Port of 101Cats and the other side into the CAT function of SDR Console or SDR</span>
+        <span class="s3">Uno. Once you have done this, the two buttons “To SDR” and “From SDR” that appear on the right hand side of the</span>
+        <span class="s3">main screen become active. If the synchronization has been turned off, then these buttons allow you to transfer</span>
+        <span class="s3">the tuning in either direction in a controlled manner before re-enabling synchronization.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Note that there is a configuration setting which specifies which SDR application is being used.</span>
+            <span class="s3">Currently, the only options are SDR Uno and SDR Console. This is a recent addition and not included in the</span>
+            <span class="s3">configuration dialogue box - it is necessary to edit the configuration file manually in order to change it.</span>
+            <span class="s3">See the pages in this Wiki for instructions on how to do this. The relevant configuration item is the </span><span class="s4">&amp;quot;</span><span class="s3">App</span><span class="s4">&amp;quot;</span>
+            <span class="s3">setting \:</span>
+        <span class="s0">&lt;/control&gt;</span>
+    <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;&lt;code&gt;</span><span class="s4">&amp;lt;</span><span class="s3">!--SDRPort - this is the port ID and speed for the port controlling an external SDR to provide</span>
+        <span class="s3">high</span><span class="s0">&lt;/code&gt;</span>
+        <span class="s0">&lt;code&gt;</span><span class="s3">resolution panadaptor support. At the moment, only SDRConsole is supported. If you don't use that,</span><span class="s0">&lt;/code&gt;</span>
+        <span class="s0">&lt;code&gt;</span><span class="s3">then delete or comment out this entry.--</span><span class="s4">&amp;gt;</span><span class="s0">&lt;/code&gt;&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;&lt;code&gt;</span><span class="s4">&amp;lt;</span><span class="s3">SDRPort enable=</span><span class="s4">&amp;quot;</span><span class="s3">true</span><span class="s4">&amp;quot;&amp;gt;</span><span class="s0">&lt;/code&gt;&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;&lt;code&gt;</span><span class="s4">&amp;lt;</span><span class="s3">PortName</span><span class="s4">&amp;gt;</span><span class="s3">COM44</span><span class="s4">&amp;lt;</span><span class="s3">/PortName</span><span class="s4">&amp;gt;</span><span class="s0">&lt;/code&gt;&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;&lt;code&gt;</span><span class="s4">&amp;lt;</span><span class="s3">PortSpeed</span><span class="s4">&amp;gt;</span><span class="s3">38400</span><span class="s4">&amp;lt;</span><span class="s3">/PortSpeed</span><span class="s4">&amp;gt;</span><span class="s0">&lt;/code&gt;&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;&lt;code&gt;</span><span class="s4">&amp;lt;</span><span class="s3">App</span><span class="s4">&amp;gt;</span><span class="s3">SDRUNO</span><span class="s4">&amp;lt;</span><span class="s3">/App</span><span class="s4">&amp;gt;</span><span class="s0">&lt;/code&gt;&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;&lt;code&gt;</span><span class="s4">&amp;lt;</span><span class="s3">/SDRPort</span><span class="s4">&amp;gt;</span><span class="s0">&lt;/code&gt;&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">Permissible values are</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">SDRUNO</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">and</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">SDRCONSOLE</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">.</span>
+    <span class="s0">&lt;/p&gt;</span>
+
+<span class="s0">&lt;/topic&gt;</span></pre>
+</body>
+</html>

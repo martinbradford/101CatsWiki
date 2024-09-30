@@ -9,6 +9,11 @@
     </title>
     <chapter title="101Cats - the new CAT control program for the Yaesu FTdx101 series"
              id="101cats-the-new-cat-control-program-for-the-yaesu-ftdx101-series">
+
+        <list>
+            <li><a href="Configuring-101Cats.topic">Configuring 101Cats</a> </li>
+            <li><a href="Colour-themes.topic">Colour themes</a> </li>
+        </list>
     </chapter>
-<a href="Configuring-101Cats.topic">Configuring 101Cats</a>
+
 </topic>

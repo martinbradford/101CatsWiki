@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Additional-Hardware.topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Additional-Hardware.topic</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">topic </span><span class="s0">SYSTEM </span><span class="s2">&quot;https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;topic </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="s1">xsi:noNamespaceSchemaLocation</span><span class="s2">=&quot;https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd&quot;</span>
+       <span class="s1">id</span><span class="s2">=&quot;Additional-Hardware&quot; </span><span class="s1">title</span><span class="s2">=&quot;Additional Hardware&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;title&gt;</span>
+        <span class="s3">Additional Hardware</span>
+    <span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">101Cats is designed to work with several different external devices that can enhance its operation. These are</span>
+        <span class="s3">briefly described here. More detailed documentation will be added in the future - if you are in a hurry to try</span>
+        <span class="s3">any of these, post a message on the Discussions board requesting additional information.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;chapter </span><span class="s1">title</span><span class="s2">=&quot;An external SDR&quot; </span><span class="s1">id</span><span class="s2">=&quot;an-external-sdr&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The FTdx101 has good support for an external SDR connected to one of the RF outputs on the rear panel.</span>
+            <span class="s3">101Cats builds on this by offering functionality to interface to a third-party SDR application running on</span>
+            <span class="s3">the same PC so that they cooperate. The author uses an SDRPlay RSP1A receiver with the SDR Console</span>
+            <span class="s3">application. 101Cats has also interfaced successfully to the SDRUno application offered by SDRPlay although</span>
+            <span class="s3">this has not been tested recently. If you try this and find that it does not work, raise it as an issue and</span>
+            <span class="s3">it will be fixed.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The configuration of 101Cats and SDR Console is too complex to describe here - a separate page will be added</span>
+            <span class="s3">to the Wiki shortly. Once it is configured at both ends, the</span>
+            <span class="s0">&lt;control&gt;</span><span class="s3">To SDR</span><span class="s0">&lt;/control&gt;</span>
+            <span class="s3">and</span>
+            <span class="s0">&lt;control&gt;</span><span class="s3">From SDR</span><span class="s0">&lt;/control&gt;</span>
+            <span class="s3">buttons to the right of the main window become active and will support the synchronization of frequency in</span>
+            <span class="s3">either direction. If you enable</span>
+            <span class="s0">&lt;control&gt;</span><span class="s3">Tracking</span><span class="s0">&lt;/control&gt;</span>
+            <span class="s3">in SDR Console, then the two applications remain synchronized automatically and you can tune the FTdx101 by</span>
+            <span class="s3">clicking in the SDR Console spectrum display.</span>
+        <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/chapter&gt;</span>
+    <span class="s0">&lt;chapter </span><span class="s1">title</span><span class="s2">=&quot;An external video digitizer.&quot; </span><span class="s1">id</span><span class="s2">=&quot;an-external-video-digitizer&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The FTdx101 has a video output on the back panel which will drive an external monitor to give you a larger</span>
+            <span class="s3">display. It works well enough, but represents a significant investment and occupies quite a lot of space in</span>
+            <span class="s3">the shack. You can buy a cheap USB video digitizer through Amazon (and other web retail sources) for around</span>
+            <span class="s3">$20 which will allow 101Cats to capture the video output from the radio and display it in a movable and</span>
+            <span class="s3">realizable window on your PC screen.</span>
+            <span class="s0">&lt;img </span><span class="s1">src</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/assets/30900693/5d969778-f67d-49d1-b459-bf219bd7e5b9&quot;</span>
+                 <span class="s1">alt</span><span class="s2">=&quot;image&quot;</span><span class="s0">/&gt;&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">101Cats will allow you to tune the radio by pointing into the waterfall display in this window and clicking</span>
+            <span class="s3">with your mouse. An example of the display is shown below ::</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;img </span><span class="s1">src</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/assets/30900693/f8467b75-4b51-46b2-a9ae-1889939d7220&quot;</span>
+             <span class="s1">alt</span><span class="s2">=&quot;two&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;/chapter&gt;</span>
+    <span class="s0">&lt;chapter </span><span class="s1">title</span><span class="s2">=&quot;A Contour Shuttle tuning wheel&quot; </span><span class="s1">id</span><span class="s2">=&quot;a-contour-shuttle-tuning-wheel&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">Contour Design manufacture </span><span class="s0">&lt;a </span><span class="s1">href</span><span class="s2">=&quot;https://contour-design.co.uk/collections/multimedia-controller&quot;</span><span class="s0">&gt;</span><span class="s3">multi-media</span>
+            <span class="s3">controllers</span><span class="s0">&lt;/a&gt; </span><span class="s3">which 101Cats supports as dedicated tuning knobs.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;img </span><span class="s1">src</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/assets/30900693/4d087657-67dd-4af4-a41f-1f31142a6e6b&quot;</span>
+             <span class="s1">alt</span><span class="s2">=&quot;image&quot;</span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The Contour Multimedia Controller Xpress has five buttons, a </span><span class="s4">&amp;quot;</span><span class="s3">jog dial</span><span class="s4">&amp;quot; </span><span class="s3">and a digitizer wheel.</span>
+            <span class="s3">101Cats uses these to tune and control the radio in a natural manner comparable with the front panel</span>
+            <span class="s3">controls. The Multimedia Controller PRO v2 has additional buttons that could be programmed to perform other</span>
+            <span class="s3">tasks - though this would require additional code in 101Cats.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/chapter&gt;</span>
+
+<span class="s0">&lt;/topic&gt;</span></pre>
+</body>
+</html>

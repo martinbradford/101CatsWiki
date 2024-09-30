@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Integrating-with-third‐party-applications..topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Integrating-with-third‐party-applications..topic</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">topic </span><span class="s0">SYSTEM </span><span class="s2">&quot;https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;topic </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="s1">xsi:noNamespaceSchemaLocation</span><span class="s2">=&quot;https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd&quot;</span>
+       <span class="s1">id</span><span class="s2">=&quot;Integrating-with-third‐party-applications.&quot; </span><span class="s1">title</span><span class="s2">=&quot;Integrating with third-party applications&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;title&gt;</span>
+        <span class="s3">Integrating with third-party applications</span>
+    <span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;p&gt;</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">101Cats</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">provides good support for integration with third-party applications including log books and digital mode</span>
+        <span class="s3">applications such as WSJT-X. As well as controlling the radio itself, 101Cats also functions as a hub to allow</span>
+        <span class="s3">multiple third-party applications to connect to the radio. It implements multiple virtual FTdx101s so that each</span>
+        <span class="s3">third-party application thinks it has sole control of the radio and 101Cats takes care of routing commands and</span>
+        <span class="s3">responses accordingly so that no two applications will block each other.</span>
+    <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">101Cats makes use of an external virtual serial port driver application in order to establish the interfaces with</span>
+        <span class="s3">the third-party applications. There are several virtual serial port driver applications available including </span><span class="s0">&lt;a</span>
+                <span class="s1">href</span><span class="s2">=&quot;https://sourceforge.net/projects/com0com/&quot;</span><span class="s0">&gt;</span><span class="s3">com0com</span><span class="s0">&lt;/a&gt;</span><span class="s3">, </span><span class="s0">&lt;a</span>
+                <span class="s1">href</span><span class="s2">=&quot;https://www.eltima.com/products/vspdxp/&quot;</span><span class="s0">&gt;</span><span class="s3">Eltima Virtual Serial Port Driver</span><span class="s0">&lt;/a&gt; </span><span class="s3">and </span><span class="s0">&lt;a</span>
+                <span class="s1">href</span><span class="s2">=&quot;https://eterlogic.com/Products.VSPE.html&quot;</span><span class="s0">&gt;</span><span class="s3">Eterlogic VIRTUAL SERIAL PORTS EMULATOR</span><span class="s0">&lt;/a&gt;</span><span class="s3">. Com0com is</span>
+        <span class="s3">probably the most widely used - it is free and works well. The others may have more modern user interfaces, but</span>
+        <span class="s3">they cost money and don't seem to have any significant benefit over com0com. Note that Windows 11 is more touchy</span>
+        <span class="s3">that previous versions about third-party drivers. Com0com is available both signed and unsigned - you probably</span>
+        <span class="s3">want to install the unsigned version with Windows 11.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">Once you have chosen and installed your virtual serial port framework, you will have to create virtual serial</span>
+        <span class="s3">port pairs to support the third-party applications that you wish to connect. Think of each virtual serial port</span>
+        <span class="s3">pair as a virtual cable that can connect two applications together. You will need as many virtual serial port</span>
+        <span class="s3">pairs as you have third-party applications to connect (actually, this may not be strictly true if you use</span>
+        <span class="s3">Omnirig - see below).</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">I use Com0com and the screenshot below shows my configuration:</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;img </span><span class="s1">src</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/assets/30900693/2d672cc7-1f7a-4f16-a7a5-1bbb089464a7&quot;</span>
+         <span class="s1">alt</span><span class="s2">=&quot;image&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">If you are creating multiple port-pairs, it can become difficult to keep track of them. Adopt a numbering scheme</span>
+        <span class="s3">which makes it easy to remember the two ends of a port pair - in my example, the port numbers at each end differ</span>
+        <span class="s3">by 20. If you are using com0com, you probably don't need to change any of the port parameters from their default</span>
+        <span class="s3">settings.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">Once you have created the port pairs, you need to configure one end of each of them into 101Cats. You can do this</span>
+        <span class="s3">through the configuration dialogue box of 101Cats as shown below. Note that the configuration dialogue box does</span>
+        <span class="s3">not currently include functionality to add or remove ports from the configuration. The standard configuration</span>
+        <span class="s3">file includes six port entries and you can update these to suit your requirements. If you don't need all six,</span>
+        <span class="s3">mark some of them as not enabled. If you need more than six, you'll have to manually edit the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">config.xml</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">file.</span>
+    <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;img </span><span class="s1">src</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/assets/30900693/86c74720-afb8-4554-bc91-f6acd2bd68b0&quot;</span>
+         <span class="s1">alt</span><span class="s2">=&quot;image&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">Note that each virtual port configured into 101Cats is one end of a virtual serial port pair - the other end will</span>
+        <span class="s3">be used by the corresponding application. In my example, port COM48 is configured for WSJT-X. Under my chosen</span>
+        <span class="s3">numbering scheme, COM48 is one end of a pair with COM28 - hence the configuration of WSJT-X on my PC is:</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;img </span><span class="s1">src</span><span class="s2">=&quot;https://github.com/martinbradford/101Cats/assets/30900693/1cf67aa1-7972-40fc-adf7-8e2c251267be&quot;</span>
+         <span class="s1">alt</span><span class="s2">=&quot;image&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">You'll need to determine the</span>
+        <span class="s0">&lt;control&gt;</span><span class="s3">Auto Information</span><span class="s0">&lt;/control&gt;</span>
+        <span class="s3">setting by trial and error in most cases. Auto Information is a function of the FTdx101 which can be turned on</span>
+        <span class="s3">and off by the application - when it is on, the radio sends a continuous stream of status messages to the</span>
+        <span class="s3">application, avoiding the need for the application to poll repeatedly for data. 101Cats is able to replicate the</span>
+        <span class="s3">Auto Information stream out to each third-party application but doing so unnecessarily will increase the load on</span>
+        <span class="s3">your PC, so try disabling it and checking if the application still works. Auto Information is controllable on a</span>
+        <span class="s3">per application basis.</span>
+    <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;chapter </span><span class="s1">title</span><span class="s2">=&quot;Omnirig&quot; </span><span class="s1">id</span><span class="s2">=&quot;omnirig&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">To Be Completed</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/chapter&gt;</span>
+
+<span class="s0">&lt;/topic&gt;</span></pre>
+</body>
+</html>

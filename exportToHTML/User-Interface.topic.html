@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>User-Interface.topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+User-Interface.topic</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">topic </span><span class="s0">SYSTEM </span><span class="s2">&quot;https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;topic </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="s1">xsi:noNamespaceSchemaLocation</span><span class="s2">=&quot;https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd&quot;</span>
+       <span class="s1">id</span><span class="s2">=&quot;User-Interface&quot; </span><span class="s1">title</span><span class="s2">=&quot;User Interface&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;title&gt;</span>
+        <span class="s3">User Interface</span>
+    <span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">101Cats is a Windows program and follows the Windows User Interface conventions fairly closely. The majority of</span>
+        <span class="s3">controls are combo-boxes, sliders and toggle switches and operate as you would expect. The intention is that it</span>
+        <span class="s3">should be largely mouse driven and sliders should react to mouse clicks, mouse drags and the rotation of the</span>
+        <span class="s3">mouse wheel. Surprisingly, none of these interactions come without some programming effort and it is almost</span>
+        <span class="s3">certainly the case that I have not implemented the mouse wheel on some of the less frequently used sliders - if</span>
+        <span class="s3">you find one, ping me a message and I'll fix it in a future release. Where a slider has a sensible default</span>
+        <span class="s3">value, it should respond to a double click by resetting to that value. Try setting the filter shift to some</span>
+        <span class="s3">non-zero value, then double clicking it - it will reset back to zero. I have not implemented that on every</span>
+        <span class="s3">slider - if you think that it should be present elsewhere, tell me and I'll add it in the future.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">The two meter controls are hand-carved code - I could not find any off-the-shelf meter control that I could use</span>
+        <span class="s3">at a reasonable price. They were complex to implement and are still not perfect. The scales were determined by</span>
+        <span class="s3">inspection and may not accurately reflect the values displayed on the radio front panel - if you find any</span>
+        <span class="s3">glaring errors, let me know.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">The frequency displays are also hand-carved code. They respond to the mouse wheel which is the primary method of</span>
+        <span class="s3">tuning. One digit is highlighted at all times and this is the digit that is varied by the mouse wheel. Clicking</span>
+        <span class="s3">on a different digit will select it such that you can choose the tuning rate. You can also use the keyboard to</span>
+        <span class="s3">temporarily adjust the tuning rate - hold down the </span><span class="s4">&amp;quot;</span><span class="s3">ctrl</span><span class="s4">&amp;quot; </span><span class="s3">key while you turn the mouse wheel to</span>
+        <span class="s3">multiple the tuning rate by ten, the </span><span class="s4">&amp;quot;</span><span class="s3">shift</span><span class="s4">&amp;quot; </span><span class="s3">key multiplies it by 100 and </span><span class="s4">&amp;quot;</span><span class="s3">ctrl</span><span class="s4">&amp;quot; </span><span class="s3">+ </span><span class="s4">&amp;quot;</span><span class="s3">shift</span><span class="s4">&amp;quot;</span>
+        <span class="s3">multiplies it by 1000. Double clicking in the frequency display rounds it off to the nearest kHz.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt;</span><span class="s3">You can also enter frequencies by typing them on the keyboard. If 101Cats is the application with focus, typing</span>
+        <span class="s3">any digit on the keyboard will open up a data entry window where you can key in an exact frequency. Hitting</span>
+        <span class="s4">&amp;quot;</span><span class="s3">enter</span><span class="s4">&amp;quot; </span><span class="s3">will tune to the new frequency.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;chapter </span><span class="s1">title</span><span class="s2">=&quot;Other Functions&quot; </span><span class="s1">id</span><span class="s2">=&quot;other-functions&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The column of buttons down the right hand side of the window should be reasonably self-explanatory, but here</span>
+            <span class="s3">are a few notes... </span><span class="s4">&amp;quot;</span><span class="s3">TW</span><span class="s4">&amp;quot; </span><span class="s3">opens the </span><span class="s4">&amp;quot;</span><span class="s3">Trace Window</span><span class="s4">&amp;quot; </span><span class="s3">which displays the data stream to and</span>
+            <span class="s3">from the radio. It also allows you to enter CAT commands and send them to the radio. This is intended for me</span>
+            <span class="s3">to debug the code - use it with care unless you are sure of what you are doing. It should not be possible to</span>
+            <span class="s3">damage the radio through this window, but you certainly could get it into some strange state which is</span>
+            <span class="s3">difficult to undo without a reset.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s4">&amp;quot;</span><span class="s3">External Tune</span><span class="s4">&amp;quot; </span><span class="s3">saves the current power level and mode settings, then switches to AM, reduces the</span>
+            <span class="s3">power to 10W and puts the radio into transmit. When you release the button, the radio is put back to receive</span>
+            <span class="s3">and the previous power and mode are reinstated. In order to avoid tuning up on a frequency that is in use,</span>
+            <span class="s3">right clicking this button will QSY up 3kHz before putting out the carrier and QSY back down on release.</span>
+            <span class="s3">Obviously, this could result in you shifting to another busy frequency, but the FTdx101 has a good bandscope</span>
+            <span class="s3">and it only takes a glance at the screen to know if it is safe to QSY up.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">Mute</span><span class="s4">&amp;quot; </span><span class="s3">button turns off both receivers. This is a toggle button - clicking it again will</span>
+            <span class="s3">restore the receivers to their previous state.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">To SDR</span><span class="s4">&amp;quot; </span><span class="s3">and </span><span class="s4">&amp;quot;</span><span class="s3">From SDR</span><span class="s4">&amp;quot; </span><span class="s3">buttons transfer the current frequency between 101Cats and an</span>
+            <span class="s3">external SDR program such as SDR Uno or SDR Console. I know that both of those programs implement a function</span>
+            <span class="s3">to synchronise their tuning with that of an external radio, but this function is limited and did not match</span>
+            <span class="s3">my style of operation. There is a more detailed explanation of this on another page of this Wiki.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;&amp;lt;</span><span class="s3">=</span><span class="s4">&amp;gt;&amp;quot; </span><span class="s3">button swaps frequency and mode between Main and Sub.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">Internal Tuner</span><span class="s4">&amp;quot; </span><span class="s3">and </span><span class="s4">&amp;quot;</span><span class="s3">Tune</span><span class="s4">&amp;quot; </span><span class="s3">buttons do what they say - turn the internal tuner on/off</span>
+            <span class="s3">and initiate a tuning cycle.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">Zero In</span><span class="s4">&amp;quot; </span><span class="s3">and </span><span class="s4">&amp;quot;</span><span class="s3">CW Spot</span><span class="s4">&amp;quot; </span><span class="s3">buttons also do what they say - only functional with the</span>
+            <span class="s3">radio in CW mode.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">Spectrum</span><span class="s4">&amp;quot; </span><span class="s3">button opens up a second window that displays the radio's spectrum display and</span>
+            <span class="s3">allows you to control it. The FTdx101 does not output spectrum data over the USB interface, so this window</span>
+            <span class="s3">is only functional if you have the DVI output on the back panel connected to the PC via a video digitizer.</span>
+            <span class="s3">This is too complex to describe here and will be the subject of another Wiki page.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">Keyer Memory</span><span class="s4">&amp;quot; </span><span class="s3">button brings up a dialogue box that roughly matches the functionality of a</span>
+            <span class="s3">Yaesu FH-2 keypad. This window needs work - it is functional, but not polished.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">History</span><span class="s4">&amp;quot; </span><span class="s3">button brings up the </span><span class="s4">&amp;quot;</span><span class="s3">Tuning History</span><span class="s4">&amp;quot; </span><span class="s3">window. This is another </span><span class="s4">&amp;quot;</span><span class="s3">work in</span>
+            <span class="s3">progress</span><span class="s4">&amp;quot;</span><span class="s3">, but already very useful. You can set a timeout (which defaults to 10 seconds) and, if the</span>
+            <span class="s3">radio remains tuned to a frequency for more than this period of time, an entry will be made in the history</span>
+            <span class="s3">window. Double clicking an entry in the history list will tune back to that frequency and mode. You can</span>
+            <span class="s3">annotate an entry in the history list to remind yourself of what you heard there and you can clear the</span>
+            <span class="s3">entire list or individual entries. Gone are the days when you were tuning around, heard an interesting DX</span>
+            <span class="s3">station, made a mental note to go back and try to work it, then completely forgot the frequency he was on.</span>
+            <span class="s3">It also helps to avoid </span><span class="s4">&amp;quot;</span><span class="s3">finger trouble</span><span class="s4">&amp;quot; </span><span class="s3">as you accidently jog the tuning knob and lose the station</span>
+            <span class="s3">you were talking to!</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The </span><span class="s4">&amp;quot;</span><span class="s3">DX Cluster</span><span class="s4">&amp;quot; </span><span class="s3">button brings up a window that displays the output of a DX Cluster server. This is</span>
+            <span class="s3">very definitely a work-in-progress - it does work, but it has a lot of rough edges. It will be improved</span>
+            <span class="s3">significantly in a future release.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">Below the buttons, you'll see </span><span class="s4">&amp;quot;</span><span class="s3">APO Time</span><span class="s4">&amp;quot; </span><span class="s3">and </span><span class="s4">&amp;quot;</span><span class="s3">APO Enabled</span><span class="s4">&amp;quot; </span><span class="s3">- these are Automatic Power</span>
+            <span class="s3">Off. The box below </span><span class="s4">&amp;quot;</span><span class="s3">APO Enabled</span><span class="s4">&amp;quot; </span><span class="s3">is the count-down - if it gets to zero, the radio is powered off.</span>
+            <span class="s3">Any activity in the window will reset the APO Timer.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s4">&amp;quot;</span><span class="s3">SWR Check</span><span class="s4">&amp;quot; </span><span class="s3">turns on a High SWR warning function. If the radio reports a high SWR reading to</span>
+            <span class="s3">101Cats, then it will be forced out of transmit and a warning message box displayed. Note that, during</span>
+            <span class="s3">antenna tuning the SWR may go high at times. 101Cats implements a delayon the High SWR warning function -</span>
+            <span class="s3">this defaults to 1 second and can be configured via the configuration file.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">Below the SWR Check box, there are several static text fields. The top one is the version number of 101Cats.</span>
+            <span class="s3">Below that, there are three numeric fields - these are the lengths of various internal data queues and are</span>
+            <span class="s3">there to assist with debugging the code. They should idle at zero and never go above four or five. The only</span>
+            <span class="s3">exception to this is at startup when there is a lot of interaction between the application and the radio and</span>
+            <span class="s3">you may see queue lengths increase significantly.</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/chapter&gt;</span>
+    <span class="s0">&lt;chapter </span><span class="s1">title</span><span class="s2">=&quot;Speech Processor Controls&quot; </span><span class="s1">id</span><span class="s2">=&quot;speech-processor-controls&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s3">The speech processor on the FTdx101 series is more complex than that on many other radios and getting the</span>
+            <span class="s3">setting wrong can make the transmission sound bad and, possibly, excessively wide. There are three sliders -</span>
+            <span class="s4">&amp;quot;</span><span class="s3">Mic Gain</span><span class="s4">&amp;quot;</span><span class="s3">, </span><span class="s4">&amp;quot;</span><span class="s3">Speech Processor</span><span class="s4">&amp;quot; </span><span class="s3">and </span><span class="s4">&amp;quot;</span><span class="s3">AMC</span><span class="s4">&amp;quot; </span><span class="s3">towards the bottom of the 101Cats</span>
+            <span class="s3">window that control the speech processor parameters. There is also a toggle switch, </span><span class="s4">&amp;quot;</span><span class="s3">Lock Processor</span><span class="s4">&amp;quot;</span>
+            <span class="s3">which disables these controls. Getting the processor set to match your microphone and operating style can</span>
+            <span class="s3">require a significant amount of effort and I wanted to guard against accidentally </span><span class="s4">&amp;quot;</span><span class="s3">jogging</span><span class="s4">&amp;quot; </span><span class="s3">a</span>
+            <span class="s3">setting and undoing all my careful work!</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/chapter&gt;</span>
+
+<span class="s0">&lt;/topic&gt;</span></pre>
+</body>
+</html>
