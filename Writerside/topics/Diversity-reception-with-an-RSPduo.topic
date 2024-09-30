@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Diversity-reception-with-an-RSPduo" title="Diversity reception with an SDRPlay RSPDuo">
+
+    <title>
+        Diversity reception with an SDRPlay RSPDuo
+    </title>
+    <p>I've recently started using an SDRPlay RSPduo receiver in diversity mode to combat local QRN - and it is very
+        impressive! The configuration is complex and I've written some notes on how to do it - get them <a
+                href="https://github.com/martinbradford/101Cats/blob/main/docs/Diversity%20Reception%20with%20an%20RSPDuo%20and%20FTdx101D.pdf">here</a>
+    </p>
+
+</topic>

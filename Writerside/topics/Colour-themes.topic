@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Colour-themes" title="Colour themes">
+
+    <title>
+        Colour themes
+    </title>
+    <p>101Cats is built using the
+        <control>MahApps</control>
+        UI framework which supports Theming. You can choose a theme to suit you by updating the
+        <control>Theme</control>
+        entry in
+        <control>config.xml</control>
+        . The configuration dialogue box does not currently support this, so you'll have to edit the configuration file
+        manually using your favorite text editor. This must be done with some care - instructions are given <a
+                href="https://github.com/martinbradford/101Cats/wiki/Configuring-101Cats">here</a></p>
+    <p>Currently, only MahApps stock themes are supported. A future version may support theme customization. The stock
+        themes are :</p>
+    <p>&quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot;, &quot;Purple&quot;, &quot;Orange&quot;, &quot;Lime&quot;,
+        &quot;Emerald&quot;, &quot;Teal&quot;, &quot;Cyan&quot;, &quot;Cobalt&quot;, &quot;Indigo&quot;, &quot;Violet&quot;,
+        &quot;Pink&quot;, &quot;Magenta&quot;, &quot;Crimson&quot;, &quot;Amber&quot;, &quot;Yellow&quot;, &quot;Brown&quot;,
+        &quot;Olive&quot;, &quot;Steel&quot;, &quot;Mauve&quot;, &quot;Taupe&quot;, &quot;Sienna&quot;</p>
+    <p>and these base themes:</p>
+    <p>&quot;Light&quot;, &quot;Dark&quot;</p>
+    <p>I use the following :</p>
+    <p><code> &lt;Theme&gt;</code>
+        <code>&lt;BaseTheme&gt;Dark.Cyan&lt;/BaseTheme&gt;</code>
+        <code>&lt;/Theme&gt;</code></p>
+    <p>which I find quite readable.</p>
+    <p>At some point in the future, I'll get round to extending the configuration dialogue box to include theming.</p>
+
+</topic>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Configuring-101Cats" title="Configuring 101Cats">
+
+    <title>
+        Configuring 101Cats
+    </title>
+    <p>101Cats is configured via the file
+        <control>config.xml</control>
+        which is stored within your
+        <emphasis>AppData\Roaming</emphasis>
+        directory. If your Windows user ID is Fred, then the path to this file will typically be
+        <emphasis>C:\Users\Fred\AppData\Roaming\G8FXC\101Cats\config.xml</emphasis>
+        .
+        <control>N.B. the AppData directory is usually set to be hidden which means that you will not be able to see it
+            in the Windows File Explorer. In order to see the configuration file and edit it, you will probably have to
+            turn on
+            <emphasis>Show|Hidden Items</emphasis>
+            from the View menu
+        </control>
+        .
+    </p>
+    <p>Note also that there will be two copies of
+        <control>config.xml</control>
+        on your PC - it is important to ensure that you edit the correct one. When you install 101Cats, a copy of
+        <control>config.xml</control>
+        is included in the program directory. This is an initial template (actually based on the configuration on my
+        PC). When you run 101Cats for the first time, this configuration file is copied from the program directory to a
+        subdirectory created under the AppData directory as described above. This then becomes the live configuration
+        file that is referenced by the application and is the one that you should edit. If you ever seriously corrupt
+        the live configuration file, you can overwrite it with a copy of the file in the program directory, but you will
+        lose all your local configuration.
+    </p>
+    <p>Until recently, you needed to edit this file with a suitable text editor in order to change the configuration of
+        101Cats. I have now started to create a dialogue box to edit this configuration in a controlled manner. It is
+        accessed through the
+        <control>Configure</control>
+        link that appears towards the right hand side of the title bar of the main 101Cats window. This configuration
+        screen is currently a work in progress. It is untidy and only covers the more commonly used configuration
+        options. For items that are not currently configurable via the dialogue box, it is still necessary to directly
+        edit
+        <control>config.xml</control>
+        with your favorite text editor (I recommend Notepad++). Editing a moderately complex XML file by hand can be
+        error prone, so please take a backup copy of the file before changing it!
+    </p>
+    <p>The config file is only read once when 101Cats is started. If you make changes either through the dialogue box,
+        or directly by editing the XML file, the changes will not be actioned until 101Cats is reloaded. You can always
+        do this by closing the application and running it again from the Windows start menu. For convenience, there is a
+        <control>RESTART</control>
+        button at the bottom right of the 101Cats main window.
+    </p>
+
+</topic>

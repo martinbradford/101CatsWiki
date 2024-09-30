@@ -1,9 +1,0 @@
-# Requirements and access to the source code
-
-101Cats is a MS Windows program written in C#. It is unlikely to ever run on any platform other than MS Windows - I develop it for my own use and I run only Windows in the shack.
-
-It was developed under Windows 10 and the development now continues under Windows 11. It will probably run under windows 8, but it is not tested on that platform. Anything earlier than Windows 8 is unlikely to be successful. It is not particularly demanding of the hardware and should run adequately on any PC capable of reasonable performance under Windows. That said, one of the major advantages of 101Cats is its ability to act as the integration hub for multiple other radio related applications such as WSJT-X, Log4OM and FLDigi - by the time you have them also loaded up, the demands on your PC will grow significantly. Until recently, the author ran it very successfully on an AMD Ryzen 5 based PC with 16GB of memory and that machine was able to run simultaneously 101Cats, WSJT-X, Log4OM, FLDigi and JS8Call plus SDR-Console while maintaining good performance. 
-
-N.B. 101Cats requires that the FTdx101 be connected to the PC via its USB port rather than the RS232 port on the back. Although the radio can be controlled via the RS232 port, Yaesu did not implement the full CAT functionality over it and there are commands that 101Cats requires which are not supported over the RS232 connection. This does, unfortunately, rule out the use of 101Cats with a radio that is connected to a SCU-LAN10 interface.
-
-This repository contains only the installation image plus some basic user documentation and discussion. The source code is also stored on GitHub but in a private repository. It is available to interested parties subject to some BSD style licence conditions. Ping a message to the owner of this repository to request access.

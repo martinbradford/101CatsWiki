@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Antenna-3-function-switching." title="Antenna 3 function notes.">
+
+    <title>
+        Antenna 3 function notes.
+    </title>
+    <p>101Cats includes a combo-box for each receiver to select the antenna configuration. The options available are
+        <control>Ant 1</control>
+        ,
+        <control>Ant 2</control>
+        , and a third which is dependent on the configuration selected in the
+        <control>Operation Setting</control>
+        menu under
+        <control>ANT3 Select</control>
+        . Recent versions of 101Cats have included a combo-box named
+        <control>Antenna 3 Function</control>
+        , but this has omitted one supported option,
+        <control>TRX</control>
+        . This is now implemented, but subject to some controls that are described below.
+    </p>
+    <p>The Antenna 3 socket on the FTdx101 series can be configured in several ways. These include options to connect an
+        active receive antenna to it in order to reduce QRM/QRN. It can also be configured as a third transmit antenna.
+        The problem with this is that if you connect an active antenna but configure the antenna 3 socket as a general
+        purpose TX/RX socket and select it, the next time you transmit, you will push 100W of RF into the pre-amplifier
+        of your receive antenna and almost certainly destroy it.</p>
+    <p>In order to address this, I've added a pair of configuration items to 101Cats. These are
+        <control>Antenna3 Permit TX</control>
+        and
+        <control>Antenna 3 Warn TX</control>
+        . They have been added to the configuration dialogue box. By default, they are both disabled. If
+        <control>Permit TX</control>
+        is enabled, then the
+        <control>TRX</control>
+        option in the
+        <control>Antenna 3 Function</control>
+        combo-box is enabled and you will be able to select it. This will, in turn, make the third option in the
+        <control>Antenna</control>
+        combo-boxes
+        <control>Ant 3</control>
+        . Setting the radio in this way will result in power being output on the antenna 3 socket.
+    </p>
+    <p>If you turn on
+        <control>Antenna3 Permit TX</control>
+        , then the
+        <control>Antenna 3 Warn TX</control>
+        configuration option will be taken into account. Under these circumstances, the
+        <control>TRX</control>
+        option in
+        <control>Antenna 3 Function</control>
+        will become enabled and selecting it will enable the
+        <control>Ant 3</control>
+        setting in the
+        <control>Antenna</control>
+        combo-box. But with the
+        <control>Antenna 3 Warn TX</control>
+        option turned on, each time you select
+        <control>Ant 3</control>
+        as the antenna, you will be presented with a modal message box warning that this configuration could result in
+        damaging an external receiver.
+    </p>
+
+</topic>

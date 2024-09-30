@@ -3,18 +3,18 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name" start-page="_Footer.md">
+                 name="Instance Name" start-page="_Footer.topic">
 
-    <toc-element topic="_Footer.md"/>
-    <toc-element topic="Using-an-external-SDR-as-a-high-resolution-panadaptor.md"/>
-    <toc-element topic="User-Interface.md"/>
-    <toc-element topic="Requirements-and-access-to-the-source-code.md"/>
-    <toc-element topic="Macros.md"/>
-    <toc-element topic="Integrating-with-third‐party-applications..md"/>
-    <toc-element topic="Home.md"/>
-    <toc-element topic="Diversity-reception-with-an-RSPduo.md"/>
-    <toc-element topic="Configuring-101Cats.md"/>
-    <toc-element topic="Colour-themes.md"/>
-    <toc-element topic="Antenna-3-function-switching..md"/>
-    <toc-element topic="Additional-Hardware.md"/>
+    <toc-element topic="_Footer.topic"/>
+    <toc-element topic="Using-an-external-SDR-as-a-high-resolution-panadaptor.topic"/>
+    <toc-element topic="User-Interface.topic"/>
+    <toc-element topic="Requirements-and-access-to-the-source-code.topic"/>
+    <toc-element topic="Macros.topic"/>
+    <toc-element topic="Integrating-with-third‐party-applications..topic"/>
+    <toc-element topic="Home.topic"/>
+    <toc-element topic="Diversity-reception-with-an-RSPduo.topic"/>
+    <toc-element topic="Configuring-101Cats.topic"/>
+    <toc-element topic="Colour-themes.topic"/>
+    <toc-element topic="Antenna-3-function-switching..topic"/>
+    <toc-element topic="Additional-Hardware.topic"/>
 </instance-profile>

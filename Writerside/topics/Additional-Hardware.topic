@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Additional-Hardware" title="Additional Hardware">
+
+    <title>
+        Additional Hardware
+    </title>
+    <p>101Cats is designed to work with several different external devices that can enhance its operation. These are
+        briefly described here. More detailed documentation will be added in the future - if you are in a hurry to try
+        any of these, post a message on the Discussions board requesting additional information.</p>
+    <chapter title="An external SDR" id="an-external-sdr">
+        <p>The FTdx101 has good support for an external SDR connected to one of the RF outputs on the rear panel.
+            101Cats builds on this by offering functionality to interface to a third-party SDR application running on
+            the same PC so that they cooperate. The author uses an SDRPlay RSP1A receiver with the SDR Console
+            application. 101Cats has also interfaced successfully to the SDRUno application offered by SDRPlay although
+            this has not been tested recently. If you try this and find that it does not work, raise it as an issue and
+            it will be fixed.</p>
+        <p>The configuration of 101Cats and SDR Console is too complex to describe here - a separate page will be added
+            to the Wiki shortly. Once it is configured at both ends, the
+            <control>To SDR</control>
+            and
+            <control>From SDR</control>
+            buttons to the right of the main window become active and will support the synchronization of frequency in
+            either direction. If you enable
+            <control>Tracking</control>
+            in SDR Console, then the two applications remain synchronized automatically and you can tune the FTdx101 by
+            clicking in the SDR Console spectrum display.
+        </p>
+    </chapter>
+    <chapter title="An external video digitizer." id="an-external-video-digitizer">
+        <p>The FTdx101 has a video output on the back panel which will drive an external monitor to give you a larger
+            display. It works well enough, but represents a significant investment and occupies quite a lot of space in
+            the shack. You can buy a cheap USB video digitizer through Amazon (and other web retail sources) for around
+            $20 which will allow 101Cats to capture the video output from the radio and display it in a movable and
+            realizable window on your PC screen.
+            <img src="https://github.com/martinbradford/101Cats/assets/30900693/5d969778-f67d-49d1-b459-bf219bd7e5b9"
+                 alt="image"/></p>
+        <p>101Cats will allow you to tune the radio by pointing into the waterfall display in this window and clicking
+            with your mouse. An example of the display is shown below ::</p>
+        <img src="https://github.com/martinbradford/101Cats/assets/30900693/f8467b75-4b51-46b2-a9ae-1889939d7220"
+             alt="two"/>
+    </chapter>
+    <chapter title="A Contour Shuttle tuning wheel" id="a-contour-shuttle-tuning-wheel">
+        <p>Contour Design manufacture <a href="https://contour-design.co.uk/collections/multimedia-controller">multi-media
+            controllers</a> which 101Cats supports as dedicated tuning knobs.</p>
+        <img src="https://github.com/martinbradford/101Cats/assets/30900693/4d087657-67dd-4af4-a41f-1f31142a6e6b"
+             alt="image"/>
+        <p>The Contour Multimedia Controller Xpress has five buttons, a &quot;jog dial&quot; and a digitizer wheel.
+            101Cats uses these to tune and control the radio in a natural manner comparable with the front panel
+            controls. The Multimedia Controller PRO v2 has additional buttons that could be programmed to perform other
+            tasks - though this would require additional code in 101Cats.</p>
+    </chapter>
+
+</topic>
