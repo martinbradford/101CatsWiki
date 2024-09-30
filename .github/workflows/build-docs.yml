@@ -11,7 +11,7 @@ permissions:
 
 env:
   INSTANCE: 'Writerside/101CatsWiki'
-  ARTIFACT: 'webHelpHI2-all.zip'
+  ARTIFACT: 'webHelp101CATSWIKI2-all.zip'
   DOCKER_VERSION: '242.21870'
   ALGOLIA_ARTIFACT: 'algolia-indexes-HI.zip'
   ALGOLIA_APP_NAME: 'NLAGB2LZHU'
