@@ -3,9 +3,9 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name" start-page="_Footer.topic">
+                 name="Instance Name" start-page="WikiHomePage.topic">
 
-    <toc-element topic="_Footer.topic"/>
+    <toc-element topic="WikiHomePage.topic"/>
     <toc-element topic="Using-an-external-SDR-as-a-high-resolution-panadaptor.topic"/>
     <toc-element topic="User-Interface.topic"/>
     <toc-element topic="Requirements-and-access-to-the-source-code.topic"/>

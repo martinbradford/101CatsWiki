@@ -2,7 +2,7 @@
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       id="_Footer" title="Wiki Home Page">
+       id="WikiHomePage" title="Wiki Home Page" help-id="_Footer">
 
     <title>
         Wiki Home Page
@@ -10,5 +10,5 @@
     <chapter title="101Cats - the new CAT control program for the Yaesu FTdx101 series"
              id="101cats-the-new-cat-control-program-for-the-yaesu-ftdx101-series">
     </chapter>
-
+<a href="Configuring-101Cats.topic">Configuring 101Cats</a>
 </topic>
