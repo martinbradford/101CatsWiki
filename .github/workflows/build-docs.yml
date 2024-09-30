@@ -10,7 +10,7 @@ permissions:
   pages: write
 
 env:
-  INSTANCE: 'Writerside/hi'
+  INSTANCE: 'Writerside/101Cats_Wiki'
   ARTIFACT: 'webHelpHI2-all.zip'
   DOCKER_VERSION: '242.21870'
   ALGOLIA_ARTIFACT: 'algolia-indexes-HI.zip'

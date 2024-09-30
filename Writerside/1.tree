@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="1"
-                  name="101Cats_Wiki" start-page="WikiHomePage.topic">
+                  name="101CatsWiki" start-page="WikiHomePage.topic">
 
     <toc-element topic="WikiHomePage.topic"/>
     <toc-element topic="Using-an-external-SDR-as-a-high-resolution-panadaptor.topic"/>
