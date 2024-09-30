@@ -23,8 +23,7 @@
         retune the PC application using the mouse wheel or keyboard and the FTdx101D will follow it.</p>
     <p>If all you want is a better panadaptor, then the configuration is simple. Both SDR Console and SDR Uno make use
         of OmniRig as the interface for this synchronization. You need to install the SDR application of choice, install
-        OmniRig, create a virtual port pair following the instructions <a
-                href="https://github.com/martinbradford/101Cats/wiki/Integrating-with-third%E2%80%90party-applications.">here</a>,
+        OmniRig, create a virtual port pair following the instructions here,
         configure one end of that virtual port pair into 101Cats and the other end into OmniRig. Finally, configure your
         SDR application to synchronize via OmniRig and it will all work well.</p>
     <p>The issue comes if you want to sometimes use the SDR application as an additional independent receiver. Both SDR
