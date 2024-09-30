@@ -4,7 +4,7 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables/>
-    <build-profile instance="1">
+    <build-profile instance="c">
         <variables>
             <noindex-content>true</noindex-content>
         </variables>
